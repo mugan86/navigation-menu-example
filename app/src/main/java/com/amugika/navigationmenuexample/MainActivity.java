@@ -22,12 +22,13 @@ public class MainActivity extends AppCompatActivity
 
     private CircularImageView imageView;
     private TextView name_header_main_menuTextView, email_header_main_menuTextView;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -99,44 +100,31 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
+
+        String title = toolbar.getTitle().toString();
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_main) {
-            // go to main layout
-        } else if (id == R.id.nav_what_is_servirace) {
+        if (id == R.id.nav_main) title = "Start activity";
+        else if (id == R.id.nav_what_is_servirace) title = "What is Servirace";
+        else if (id == R.id.nav_app_preferences) title = "Configuration";
+        else if (id == R.id.nav_versions) title = "Versions";
+        else if (id == R.id.nav_about_author) title = "About author";
+        else if (id == R.id.nav_contact) title = "Contact";
+        else if (id == R.id.nav_search_races) title = "Search races";
+        else if (id == R.id.nav_next_races) title = "Next races";
+        else if (id == R.id.nav_past_races) title = "Past races";
+        else if (id == R.id.nav_near_races) title = "Near Races";
+        else if (id == R.id.nav_suggest_races) title = "Suggest races";
+        else if (id == R.id.nav_running_calculator) title = "Running calculator";
+        else if (id == R.id.nav_traffic_info) title = "Traffic info";
+        else if (id == R.id.nav_colaborate) title = "Colaborate";
+        else if (id == R.id.nav_share_app) title = "Share App";
+        else if (id == R.id.nav_valoration) title = "Valorate app";
+        else if (id == R.id.nav_change_language) title = "Change language";
+        else if (id == R.id.nav_champions) title = "Champions";
 
-        } else if (id == R.id.nav_versions) {
-
-        } else if (id == R.id.nav_about_author) {
-
-        } else if (id == R.id.nav_contact) {
-
-        } else if (id == R.id.nav_search_races) {
-
-        } else if (id == R.id.nav_past_races) {
-
-        } else if (id == R.id.nav_near_races) {
-
-        } else if (id == R.id.nav_suggest_races) {
-
-
-        } else if (id == R.id.nav_running_calculator) {
-
-        } else if (id == R.id.nav_traffic_info) {
-
-        } else if (id == R.id.nav_colaborate) {
-
-        }else if (id == R.id.nav_share_app) {
-
-        }else if (id == R.id.nav_valoration) {
-
-        } else if (id == R.id.nav_change_language) {
-
-        } else if (id == R.id.nav_champions)
-        {
-
-        }
+        toolbar.setTitle(title);
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
