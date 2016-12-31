@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_what_is_servirace"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="¿Qué es Servirace?" />
+        <item
+            android:id="@+id/nav_versions"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Versiones" />
+        <item
+            android:id="@+id/nav_about_author"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Sobre el desarrollador" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Contacto" />
+    </group>
+
+    <item android:title="Carreras">
+        <menu>
+            <item
+                android:id="@+id/nav_champions"
+                android:icon="@drawable/ic_championship"
+                android:title="Buscador de carreras" />
+            <item
+                android:id="@+id/nav_search_races"
+                android:icon="@drawable/ic_search"
+                android:title="Buscador de carreras" />
+            <item
+                android:id="@+id/nav_next_races"
+                android:icon="@drawable/ic_next_races"
+                android:title="Próximas carreras" />
+            <item
+                android:id="@+id/nav_past_races"
+                android:icon="@drawable/ic_past_races"
+                android:title="Carreras anteriores" />
+            <item
+                android:id="@+id/nav_near_races"
+                android:icon="@drawable/ic_near_races"
+                android:title="Carreras cercanas" />
+            <item
+                android:id="@+id/nav_suggest_races"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Sugerir" />
+        </menu>
+    </item>
+    <item android:title="Más opciones">
+        <menu>
+            <item
+                android:id="@+id/nav_running_calculator"
+                android:icon="@drawable/ic_calculator"
+                android:title="Running calculator" />
+            <item
+                android:id="@+id/nav_traffic_info"
+                android:icon="@drawable/ic_traffic_situation"
+                android:title="Situacion del tráfico" />
+            <item
+                android:id="@+id/nav_colaborate"
+                android:icon="@drawable/ic_colaborate"
+                android:title="Colaborar con Servirace" />
+            <item
+                android:id="@+id/nav_change_language"
+                android:icon="@drawable/ic_change_language"
+                android:title="Change language" />
+            <item
+                android:id="@+id/nav_share_app"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Compartir" />
+            <item
+                android:id="@+id/nav_valoration"
+                android:icon="@drawable/ic_valorate"
+                android:title="Valorar aplicacion" />
+        </menu>
+    </item>
+
+</menu>
