@@ -4,11 +4,11 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_main"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_home"
             android:title="Inicio" />
         <item
             android:id="@+id/nav_what_is_servirace"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_info"
             android:title="¿Qué es Servirace?" />
         <item
             android:id="@+id/nav_versions"
@@ -20,11 +20,11 @@
             android:title="Configuracion" />
         <item
             android:id="@+id/nav_about_author"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_about_author"
             android:title="Sobre el desarrollador" />
         <item
             android:id="@+id/nav_contact"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_menu_send"
             android:title="Contacto" />
     </group>
 
@@ -33,7 +33,7 @@
             <item
                 android:id="@+id/nav_champions"
                 android:icon="@drawable/ic_championship"
-                android:title="Buscador de carreras" />
+                android:title="Campeonatos" />
             <item
                 android:id="@+id/nav_search_races"
                 android:icon="@drawable/ic_search"
