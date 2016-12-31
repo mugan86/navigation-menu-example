@@ -32,11 +32,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="android.studio@android.com" />
-    <Button
-        android:background="?actionBarItemBackground"
-        android:text="Configuration"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/preferences_header_main_menuButton" />
 
 </LinearLayout>
