@@ -15,6 +15,10 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Versiones" />
         <item
+            android:id="@+id/nav_app_preferences"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Configuracion" />
+        <item
             android:id="@+id/nav_about_author"
             android:icon="@drawable/ic_menu_manage"
             android:title="Sobre el desarrollador" />
@@ -48,7 +52,7 @@
                 android:title="Carreras cercanas" />
             <item
                 android:id="@+id/nav_suggest_races"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/ic_suggest"
                 android:title="Sugerir" />
         </menu>
     </item>
